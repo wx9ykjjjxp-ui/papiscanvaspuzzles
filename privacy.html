@@ -19,93 +19,210 @@
         <a href="help.html">Help</a>
       </div>
     </div>
-
     <div class="content">
       <h2>Privacy Policy</h2>
       <p><strong>Effective date:</strong> <span id="effective"></span></p>
 
       <p>
-        Papis Canvas Puzzles (“the App”) respects your privacy. This Privacy Policy
-        explains what data is (and is not) collected when you use the App.
+        Papis Canvas Puzzles ("the App") is an iPhone app that lets you play
+        jigsaw puzzles and order printed products — canvas prints, biodegradable
+        phone cases, and physical jigsaw puzzle boxes — using either curated
+        catalogue images or your own photos. This Privacy Policy explains what
+        data we collect, why we collect it, who we share it with, and how long
+        we keep it. We try to keep it short and concrete.
       </p>
 
       <h3>Information We Collect</h3>
 
       <p>
-        <strong>User-Selected Photos:</strong><br />
-        The App allows you to select photos from your device in order to create
-        personal jigsaw puzzles. Photo selection is entirely optional and initiated
-        by you.
+        <strong>Photos you upload.</strong> When you choose to print a canvas,
+        phone case, or jigsaw puzzle from one of your own photos, the photo is
+        uploaded to our cloud storage (Cloudflare R2) so we can pass it to the
+        print fulfilment partner. Each upload is tagged with an anonymous
+        per-install identifier so only your device can later list or delete it.
+        Photos that have not been used in an order are automatically deleted
+        after 7 days of inactivity.
       </p>
 
+      <p>
+        <strong>Order information at checkout.</strong> When you place an order
+        we collect:
+      </p>
       <ul>
-        <li>Selected photos are stored locally on your device.</li>
-        <li>Photos are <strong>not uploaded</strong> to any server.</li>
-        <li>Photos are <strong>not shared</strong> with third parties.</li>
-        <li>Photos are <strong>not linked</strong> to your identity.</li>
+        <li>Recipient name</li>
+        <li>Email address</li>
+        <li>Phone number</li>
+        <li>Full shipping address</li>
       </ul>
+      <p>
+        These details are required to print, ship, and email you about your
+        order. They are never used for marketing.
+      </p>
 
       <p>
-        You can delete your photos at any time from within the App.
+        <strong>Payment information.</strong> Card and payment details are
+        collected and processed directly by Stripe inside the App's payment
+        sheet. Your card number is never stored on our servers — we only
+        receive a payment confirmation token from Stripe. Stripe's privacy
+        notice applies to that data:
+        <a href="https://stripe.com/privacy">stripe.com/privacy</a>.
+      </p>
+
+      <p>
+        <strong>Anonymous device identifier.</strong> The first time you
+        launch the App, a random UUID is generated and stored in your device's
+        local app preferences. This identifier is used to:
+      </p>
+      <ul>
+        <li>Establish ownership of photos you upload (so only your device can list or delete them)</li>
+        <li>Identify you anonymously in the puzzle ratings and Arena leaderboard features</li>
+      </ul>
+      <p>
+        It is not linked to your Apple ID, iCloud account, or contact details
+        unless you place an order (in which case the order record connects the
+        identifier to your purchase). Reinstalling the App produces a new
+        identifier.
+      </p>
+
+      <p>
+        <strong>Arena leaderboard data.</strong> If you choose to compete in
+        the Arena feature, we store the username and country code you enter,
+        together with the times you achieve on each puzzle challenge.
+        Usernames and times are visible to other players on the leaderboard.
+      </p>
+
+      <p>
+        <strong>Order history.</strong> A record of orders you have placed
+        through the App is kept on our servers and shown back to you in the
+        My Orders screen.
       </p>
 
       <h3>Information We Do Not Collect</h3>
       <ul>
-        <li>No account information</li>
-        <li>No names, email addresses, or identifiers</li>
-        <li>No location data</li>
+        <li>No advertising identifiers (IDFA / IDFV)</li>
+        <li>No analytics, crash reporting, or behavioural tracking SDKs</li>
+        <li>No precise device location (we do not use GPS)</li>
         <li>No contacts or address book data</li>
-        <li>No advertising identifiers</li>
-        <li>No analytics or tracking data</li>
+        <li>No health or fitness data</li>
+        <li>No microphone, camera-roll scraping, or background audio</li>
+        <li>No data shared with advertising networks or data brokers</li>
       </ul>
 
-      <h3>This App is free</h3>
+      <h3>Tracking</h3>
       <p>
-        There are no subscriptions, in-app purchases,
-  or payments of any kind. All features, including creating puzzles from your
-  own photos, are available at no cost.
+        We do not track you across other apps or websites and we do not show
+        you advertising. Because of this, the App does not display Apple's
+        App Tracking Transparency prompt.
       </p>
 
-      <h3>Data Sharing</h3>
+      <h3>Service Providers We Share Data With</h3>
       <p>
-        We do not sell, rent, or share your personal data.
-        User-selected photos remain on your device unless you choose to remove them.
-      </p>
-
-      <h3>Children’s Privacy</h3>
-      <p>
-        The App does not knowingly collect personal data from children.
-        If you believe that personal information has been provided in error,
-        please contact us and we will take appropriate action.
-      </p>
-
-      <h3>Your Control</h3>
-      <p>
-        You control all data stored by the App:
+        We share the minimum information needed to fulfil your order with the
+        following service providers. They act as data processors on our behalf
+        and are not permitted to use your data for their own marketing.
       </p>
       <ul>
-        <li>You decide which photos to select</li>
-        <li>You may delete photos at any time</li>
-        <li>You may remove the App to delete all stored data</li>
+        <li>
+          <strong>Stripe</strong> — payment processing.
+          (<a href="https://stripe.com/privacy">stripe.com/privacy</a>)
+        </li>
+        <li>
+          <strong>Prodigi</strong> — print fulfilment for canvas prints and
+          phone cases. Receives the photo, recipient name, email, phone,
+          and shipping address.
+          (<a href="https://www.prodigi.com/privacy/">prodigi.com/privacy</a>)
+        </li>
+        <li>
+          <strong>ShipEngine / ShipStation</strong> — shipping rates and
+          labels for jigsaw puzzle boxes. Receives the destination postcode
+          and country to calculate rates, and the full shipping address when
+          a label is created.
+          (<a href="https://www.shipengine.com/privacy-policy/">shipengine.com/privacy-policy</a>)
+        </li>
+        <li>
+          <strong>Resend</strong> — transactional email delivery. Receives
+          your email address and the message body so we can send order
+          confirmations and shipping updates.
+          (<a href="https://resend.com/legal/privacy-policy">resend.com/legal/privacy-policy</a>)
+        </li>
+        <li>
+          <strong>Cloudflare</strong> — hosting, storage of uploaded photos
+          (R2), and the database that holds order, ratings, and Arena
+          records.
+          (<a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a>)
+        </li>
       </ul>
+      <p>
+        We do not sell or rent your data to anyone.
+      </p>
+
+      <h3>How Long We Keep Your Data</h3>
+      <ul>
+        <li>
+          <strong>Uploaded photos:</strong> deleted automatically 7 days after
+          their last interaction (upload, view, or use in an order). Photos
+          referenced in a paid order have their timer reset whenever the order
+          is updated.
+        </li>
+        <li>
+          <strong>Order records:</strong> kept for as long as needed to
+          fulfil the order, support customer enquiries, and meet our legal
+          obligations (typically up to 7 years for tax and accounting
+          purposes).
+        </li>
+        <li>
+          <strong>Arena leaderboard entries:</strong> deleted after 3 months
+          with no new time submission, or immediately when you tap "Leave".
+        </li>
+        <li>
+          <strong>Anonymous device identifier:</strong> kept on your device
+          until you reinstall the App. The corresponding server-side records
+          are deleted along with the photos / orders / leaderboard rows they
+          relate to.
+        </li>
+      </ul>
+
+      <h3>Children's Privacy</h3>
+      <p>
+        The App is not directed at children under 13 and we do not knowingly
+        collect personal data from children. If you believe a child has
+        provided personal information to us, contact us and we will delete it.
+      </p>
+
+      <h3>Your Rights and Controls</h3>
+      <ul>
+        <li>You can delete any uploaded photo from within the App.</li>
+        <li>You can leave the Arena feature at any time, which removes your username, country, and times.</li>
+        <li>You can email <a href="mailto:papi@papiscanvas.com">papi@papiscanvas.com</a> to request deletion of an order record (subject to legal retention obligations).</li>
+        <li>Removing the App deletes the anonymous device identifier and all locally stored preferences from your device.</li>
+        <li>If you are in the UK, EU, or another region with data-protection laws, you may also have the right to access, correct, or object to processing of your personal data. Email us to exercise these rights.</li>
+      </ul>
+
+      <h3>Where Your Data is Processed</h3>
+      <p>
+        Papis Canvas Puzzles is operated from the United Kingdom. Our service
+        providers (Stripe, Prodigi, ShipEngine, Resend, Cloudflare) operate
+        globally and may process your data in the United States, the European
+        Union, or other regions in line with their respective privacy notices.
+      </p>
 
       <h3>Changes to This Policy</h3>
       <p>
-        This Privacy Policy may be updated to reflect changes to the App.
-        Any updates will be published on this page.
+        This Privacy Policy may be updated to reflect changes to the App or
+        our service providers. Any updates will be published on this page with
+        a new effective date.
       </p>
 
       <h3>Contact</h3>
       <p>
-        If you have questions about this Privacy Policy, contact:
+        If you have questions about this Privacy Policy or want to exercise
+        any of the rights above, contact:
         <a href="mailto:papi@papiscanvas.com">papi@papiscanvas.com</a>
       </p>
-
       <p style="margin-top:18px;">
         <a class="button secondary" href="index.html">Back to Home</a>
       </p>
     </div>
-
     <div class="footer">
       <div>© <span id="year"></span> Papis Canvas Puzzles</div>
       <div class="small-links">
@@ -115,7 +232,6 @@
       </div>
     </div>
   </div>
-
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
     document.getElementById("effective").textContent = new Date().toLocaleDateString();
